@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ 
+.splash {
+  display: flex;
+  flex-direction: column;
+}
+
+.splash h1 {
+  margin-bottom: 80%;
+  color: red;
+  margin-top: 10%;
+}
