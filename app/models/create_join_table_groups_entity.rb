@@ -1,0 +1,2 @@
+class CreateJoinTableGroupsEntity < ApplicationRecord
+end
