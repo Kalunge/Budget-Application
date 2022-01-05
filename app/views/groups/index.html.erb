@@ -16,7 +16,7 @@
    <div class="d-flex mt bg-light p-2 justify-content-between align-items-center categ">
      <img src="<%= group.icon %>" />
      <h3> <%= group.name %> </h3>
-     <h4>$45.00</h4>
+     <h4><%=number_to_currency(group.entities.sum(:amount))%></h4>
    </div>
    <% end %>
    <% end %>

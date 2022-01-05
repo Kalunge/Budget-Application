@@ -1,3 +1,4 @@
+<%= link_to "Back", root_path(), :class => "btn btn-dark mt-3" %>
 <div class="d-flex mt bg-light p-2  align-items-center">
   <img src="<%= @group.icon %>" />
   <h2> <%= @group.name %></h2>
@@ -17,13 +18,13 @@
     <span class="smal-txt">Created on:  <%= entity.created_at.strftime("%d %b %Y") %> </span>
   </div>
 </div>
+<% end %>
+<% end %>
 <div class="d-flex mt-2 mb-3 justify-content-between">
   <h3 class="">TOTAL PAYMENT</h3>
-  <h2>$500</h2>
+  <h2> <%= number_to_currency(@group.entities.sum(:amount)) %></h2>
 </div>
-<% end %>
-<% end %>
 
  <div class="d-grid gap-2 col-12 mx-auto">
-   <%= link_to "Add new Entity", new_entity_path(),  :class => "btn btn-md btn-success" %>
+   <%= link_to "Add new Entity", new_group_entity_path(@group),  :class => "btn btn-md btn-success" %>
  </div>

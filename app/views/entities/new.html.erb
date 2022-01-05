@@ -1,7 +1,7 @@
 <%= link_to "Back", root_path(), :class => "btn btn-dark mt-3" %>
 <section class="mt-3 text-center">
   <h1>New Entity</h1>
-  <%= form_with model: @entity do |form| %>
+  <%= form_with(model: @entity, url: { action: "create" }) do |form| %>
   <div class="form-group">
     <%= form.label :name %><br>
     <%= form.text_field :name %>

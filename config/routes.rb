@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root to: "splash#index"
 
   devise_for :users
-  resources :groups
-  resources :entities
+  resources :groups do
+    resources :entities
+  end
 end
