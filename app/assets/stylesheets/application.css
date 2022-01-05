@@ -14,9 +14,6 @@
  *= require_self
  */
 
-
-
-
 .splash {
   display: flex;
   flex-direction: column;
@@ -34,7 +31,8 @@
   background-color: blue;
 }
 
-.category h2, i {
+.category h2,
+i {
   color: white;
 }
 
