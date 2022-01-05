@@ -8,8 +8,8 @@ class EntitiesController < ApplicationController
   end
 
   def create
-    @entity = current_user.groups.find_by(id: params[:group_id]).entities.create(name: entity_params[:name],
-                                                                                  amount: entity_params[:amount], user: current_user)
+    @group = current_user.groups.find_by(id: params[:group_id])
+    @entity = @group.entities.create(name: entity_params[:name], amount: entity_params[:amount], user: current_user)
 
     respond_to do |format|
       if @entity.save
