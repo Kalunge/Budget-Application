@@ -1,2 +1,16 @@
-<h1>Groups#new</h1>
-<p>Find me in app/views/groups/new.html.erb</p>
+<h1>New group</h1>
+<%= form_with model: @group do |form| %>
+<div>
+  <%= form.label :name %><br>
+  <%= form.text_field :name %>
+</div>
+
+<div>
+  <%= form.label :icon %><br>
+  <%= form.text_field :icon %>
+</div>
+
+<div>
+  <%= form.submit %>
+</div>
+<% end %>

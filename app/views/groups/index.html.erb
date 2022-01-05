@@ -1,1 +1,27 @@
-<h1>welcome</h1>
+<section class="category-container">
+  <div class="mt-3 category p-3">
+    <%= fa_icon('bars') %>
+    <h2>TRANSACTIONS</h2>
+    <%= fa_icon('searchengin') %>
+  </div>
+
+  <div class="d-flex mt bg-light p-2 justify-content-between categ">
+    <h4 class="mt-2">Gift Credit</h4>
+    <h4>$45.00</h4>
+  </div>
+
+<% if @groups %>
+   <% @groups.each do | group | %>
+   <div class="d-flex mt bg-light p-2 justify-content-between align-items-center categ">
+     <img src="<%= group.icon %>" />
+     <h3> <%= group.name %> </h3>
+     <h4>$45.00</h4>
+   </div>
+   <% end %>
+<% end %>
+
+  <div class="d-grid gap-2 col-12 mx-auto">
+    <%= link_to "Add new Category", new_group_path(),  :class => "btn btn-md btn-success" %>
+  </div>
+
+</section>
