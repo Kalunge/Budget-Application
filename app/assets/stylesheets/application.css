@@ -42,8 +42,17 @@
   border: solid 2px black;
 }
 
-.categ img {
-  width: 80px;
-  height: 60px;
+img {
+  width: 100px;
+  height: 80px;
   border-radius: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.check {
+  color: red;
 }

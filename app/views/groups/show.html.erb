@@ -1,0 +1,29 @@
+<div class="d-flex mt bg-light p-2  align-items-center">
+  <img src="<%= @group.icon %>" />
+  <h2> <%= @group.name %></h2>
+</div>
+<div>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates magnam voluptas vitae, unde quod asperiores nobis ducimus reprehenderit veniam praesentium!</p>
+</div>
+
+<% if @entities %>
+<% @entities.each do | entity | %>
+<div class="entity bg-light p-3">
+  <h4> <%= entity.name %> </h4>
+  <div class="d-flex ">
+    <i class="material-icons-outlined check">
+      check_box_outline_blank
+    </i>
+    <span class="smal-txt">Created on:  <%= entity.created_at.strftime("%d %b %Y") %> </span>
+  </div>
+</div>
+<div class="d-flex mt-2 mb-3 justify-content-between">
+  <h3 class="">TOTAL PAYMENT</h3>
+  <h2>$500</h2>
+</div>
+<% end %>
+<% end %>
+
+ <div class="d-grid gap-2 col-12 mx-auto">
+   <%= link_to "Add new Entity", new_entity_path(),  :class => "btn btn-md btn-success" %>
+ </div>

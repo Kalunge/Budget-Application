@@ -13,6 +13,11 @@ class GroupsController < ApplicationController
     @group = current_user.groups.new
   end
 
+  def show
+    @group = current_user.groups.find(params[:id])
+    @entities = @group.entities
+  end
+
   def create
     @group = current_user.groups.new(group_params)
 
