@@ -6,8 +6,17 @@
 
 A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-## Built With
+Home page | Details page
+----------| ----------------
+![Screenshot from 2022-01-06 09-39-37](https://user-images.githubusercontent.com/50773868/148354617-5e73f273-22ae-40af-8841-d62fae605940.png)| ![Screenshot from 2022-01-05 16-37-53](https://user-images.githubusercontent.com/50773868/148354639-6c612baf-cbb4-4a6c-a540-0b8302bdaeb5.png)
 
+
+
+
+
+
+
+## Built With
 - Ruby on Rails
 - PostgreSQL
 - Bootstrap 
