@@ -83,7 +83,7 @@ and now run  `rails s`
 ### Test
 
 ```sh
-rspec or rake
+rspec spec/
 ```
 
 ## Authors
