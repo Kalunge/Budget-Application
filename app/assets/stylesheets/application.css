@@ -20,9 +20,9 @@
 }
 
 .splash h1 {
-  margin-bottom: 80%;
-  color: red;
-  margin-top: 10%;
+  margin-bottom: 30%;
+  color: black;
+  font-style: italic;
 }
 
 .category {
@@ -75,4 +75,8 @@ a:link {
 h4 {
   color: black;
   text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
 }
