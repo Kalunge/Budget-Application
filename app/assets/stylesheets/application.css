@@ -46,11 +46,32 @@ img {
   border-radius: 10%;
 }
 
-a {
+a:link {
   text-decoration: none;
   color: white;
 }
 
 .check {
   color: red;
+}
+
+.nametime {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.date {
+  color: black;
+  text-decoration: none;
+}
+
+.categ {
+  margin : 2%;
+  border: solid 2px grey;
+}
+
+.categ h3, h4 {
+  color: black;
+  text-decoration: none;
 }
