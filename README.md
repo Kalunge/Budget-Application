@@ -12,6 +12,8 @@ A mobile web application where you can manage your budget: you have a list of tr
 - PostgreSQL
 - Bootstrap 
 
+## Live Demo
+[live](https://bajeti-app.herokuapp.com/)
 
 ## Getting Started
 
