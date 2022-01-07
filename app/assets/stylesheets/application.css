@@ -1,6 +1,6 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
@@ -13,3 +13,70 @@
  *= require_tree .
  *= require_self
  */
+
+.splash {
+  display: flex;
+  flex-direction: column;
+}
+
+.splash h1 {
+  margin-bottom: 30%;
+  color: black;
+  font-style: italic;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+.category h2,
+i {
+  color: white;
+}
+
+.category-container {
+  border: solid 2px black;
+}
+
+img {
+  width: 100px;
+  height: 80px;
+  border-radius: 10%;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.check {
+  color: red;
+}
+
+.nametime {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.date {
+  color: black;
+  text-decoration: none;
+}
+
+.categ {
+  margin: 2%;
+  border: solid 2px grey;
+}
+
+.categ h3,
+h4 {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
